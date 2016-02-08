@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+<h1 class="center">Listando Despesas</h1>
+
+<table class="table table-bordered table-striped center">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Horario</th>
+      <th>Descrição</th>
+      <th>Quantidade</th>
+      <th>Comentário</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<tbody id="despesas">
+<%= render @despesas %>
+</tbody>
+</table>
+<div class="well">
+<%= link_to 'Nova Despesa', new_despesa_path, remote: true, class: "btn btn-primary" %>
+</div>
+</div>
+<div id="task-form" style="display:none;"></div>
+<br>
+
+
+

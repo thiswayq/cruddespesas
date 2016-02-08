@@ -1,0 +1,11 @@
+
+      <tr>
+        <td><%= despesa.data %></td>
+        <td><%= despesa.time.strftime("%H:%M:%S") %></td>
+        <td><%= despesa.description %></td>
+        <td><%= despesa.amount  %> R$</td>
+        <td><%= despesa.comment %></td>
+        <td><%= link_to 'Show', despesa, remote: true, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_despesa_path(despesa), remote: true, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Destroy', despesa, method: :delete, remote: true, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+      </tr>
