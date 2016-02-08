@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'responders', '~> 2.0' 
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
@@ -48,6 +48,9 @@ group :development do
 end
 
 group :production do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+  gem 'sqlite3'
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
