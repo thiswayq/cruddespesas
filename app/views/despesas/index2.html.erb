@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1 class="center">Listando Despesas</h1>
+
+  <table class="table table-bordered table-striped center">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Horario</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Comentário</th>
+        <th>Editar</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="despesas">
+    </tbody>
+  </table>
+  <div class="well">
+    <input type="button" value='Nova Despesa' class="btn btn-primary meu_botao" />
+  </div>
+</div>
+<div id="task-form" style="display:none;" class="center">
+  <%= render 'form2' %>
+</div>
+

@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :despesas
-
+  get 'index2' => "despesas#index2"
   root "despesas#index"
+  namespace 'api', format: 'json' do
+    resources :despesas
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

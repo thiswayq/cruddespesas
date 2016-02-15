@@ -4,7 +4,8 @@ class DespesasController < ApplicationController
   respond_to :html, :js
   # GET /despesas
   # GET /despesas.json
-
+  def index2
+  end
   # GET /despesas/1
   # GET /despesas/1.json
   def show
